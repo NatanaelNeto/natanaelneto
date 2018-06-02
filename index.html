@@ -1,22 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+	
+	<head>
+		
+		<meta charset="utf-8">
+		<title>NESN - Website Natanael Neto</title>
+		<meta name="description" content="Conheça o meu site e meu portifólio. Aproveite e baixe meu currículo ou entre em contato para contratar um serviço!"> <!-- Descrição -->
+		<meta name="og:type" content="website"> <!-- Tipo -->
+		<meta name="og:title" content="NESN Website Natanael Neto"> <!-- Título da página -->
+		<meta name="og:description" content="Conheça o meu site e meu portifólio. Aproveite e baixe meu currículo ou entre em contato para contratar um serviço!"> <!-- Descrição -->
+		<meta name="og:url" content=""> <!-- URL do site -->
+		<meta name="og:image" content=""> <!-- Imagem Facebook -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Viewport -->
+		<link rel="shortcut icon" href="img/favicon.ico"> <!--Fav-->
+		<meta name="keywords" content="Web Designer, em Recife, Natanael Neto, Desenvolvedor Web, Desenvolvedor Web em Recife">
+		<link rel="stylesheet" type="text/css" href="css/css.css">
 
-    <head>
+		<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,600|Roboto+Slab:700" rel="stylesheet">
+		<!--<script src="js/audio.min.js"></script>
+		<script>
+  			audiojs.events.ready(function() {
+    			var as = audiojs.createAll();
+  			});
+		</script> -->
+	</head>
+	
+	<body>
 
-        <meta name="viewport" content="width = device-width, initial-scale = 0.75, minimum-scale = 0.75">
-        <meta name="author" content="Natanael Neto">
-        <meta name="description" content="Webfolio Natanael Neto">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<header>
+			
+			<div class="container">
+				
+				<a href="index.html">
+					<div class="blankspace sgt hidden-l hidden-m">b</div>
+					<img src="img/nesn.png" class="g2 sgt" alt="NESN">
+				</a>
+				<nav>
+				
+					<ul>
+					
+						<li class="g2 sgt"><a href="sobre.html" class="h-red">sobre</a></li>
+						<li class="g2 sgt"><a href="portifolio.html" class="h-yellow">portifólio</a></li>
+						<li class="g2 sgt"><a href="contato.html" class="h-blue">contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
-    </head>
+		<section class="sec-intro">
+			
+			<div class="container">
+				
+				<div class="g8 sg4">
+					
+					<div>
+						
+						<div class="barra f-red hidden-s"></div>
+						<h1 class="red">Sem Clichês</h1>
+					</div>
+					<h3 class="g4 sg3">Mas eu me garanto no que eu faço.</h3>
+					<p class="g6 sg4">Sério. Onde você encontra um desenvolvedor front-end, web-designer e que possui experiência em um monte de área? Prazer. Sou Natanael Neto e posso te ajudar. Com certeza.</p>
+					<a href="sobre.html"><button class="g3 btn f-red">sobre</button></a>
+				</div>
 
-    <body>
+				<div>
+					
+					<img src="img/mockup.png" class="g8 sg4" alt="Mockup computador e smartphone">
+				</div>
+			</div>
+		</section>
 
-        Hello World!
-    </body>
+		<section class="sec-sobre container">
+			
+			<div class="g8 sg4 foto-home">
+				
+				<img src="img/foto-1.jpg">
+			</div>
+			<div class="g8 sg4">
+			
+				<div>
+					
+					<div class="barra f-red hidden-s"></div>
+					<h2 class="red">Natanael Enéas da Silva Neto</h2>
+						<h3>	21 anos<br>
+						Estudante de Ciência da Computação<br>
+						no Centro de Informática - UFPE</h3>
+				</div>
+				<div>
+					
+					<div class="barra f-yellow hidden-s"></div>
+					<h3>Desenvolvedor Front-End<br>
+						Web Designer<br>
+						Game Designer</h3>
+				</div>
+			</div>
+		</section>
 
+		<section class="sec-cite container">
+			
+			<blockquote>E tudo o que você fizer, faça de todo o coração, como para o Senhor, e não para os homens</blockquote>
+			<cite class="blue">Colossenses 3:23</cite>
+		</section>
+
+		<section class="sec-port container">
+			
+			<h2 class="yellow">Portifólio</h2>
+			<div class="port"><img class="g8 sg4" src="img/site-1.png"></div>
+			<div class="port"><img class="g8 sg4" src="img/site-2.png"></div>
+			<div class="port"><img class="g10 sg4" src="img/site-3.png"></div>
+			<div class="g6 sg4 soundtracks">
+				
+				<h2 class="yellow">Soundtracks</h2>
+				<audio src="audio/bit-parade.mp3" preload="auto" controls="controls">Áudio disponível em breve no SoundCloud</audio>
+				<p>bit parade</p>
+				<audio src="audio/jardins.mp3" preload="auto" controls="controls">Áudio disponível em breve no SoundCloud</audio>
+				<p>jardins</p>
+				<audio src="audio/reflex.mp3" preload="auto" controls="controls">Áudio disponível em breve no SoundCloud</audio>
+				<p>reflex</p>
+				<a href="portifolio.html"><button class="g3 btn f-yellow">portifólio</button></a>
+			</div>
+			
+		</section>
+
+		<section class="sec-contato container">
+			
+			<div class="g7 blankspace hidden-s">blank</div>
+			<div class="g4 sg2">
+				<button class="g3 sg2 btn f-blue">contato</button>
+			</div>
+			<div class="g5 sg2">
+				
+				<h2 class="blue">Gostou?<div class="barra f-blue hidden-s"></div></h2>
+				<h3> Entre em contato! Amarei trabalhar com você, e você comigo.</h3>
+			</div>
+		</section>
+
+		<footer class="footer">
+			
+			<div class="container">
+				
+				<div class="blankspace g1 hidden-s"></div>
+				<div class="g7 sg4">
+					
+					<div class="barra hidden-s"></div>
+					<ul>
+						<li><a class="red" href="sobre.html">sobre</a></li>
+						<li><a class="yellow" href="portifolio.html">portifólio</a></li>
+						<li><a class="blue" href="contato.html">contato</a></li>
+					</ul>
+				</div>
+
+				<div class="g8 sg4">
+					
+					<div class="barra f-red hidden-s"></div>
+					<h2 class="red">Natanael Neto</h2>
+					<h3>	Desenvolvedor Front-end<br>
+							Web Designer</h3>
+				</div>
+			<p class="g16 sg4">Site desenvolvido por Natanael Neto. 2018. Alguns direitos reservados.</p>
+			</div>
+		</footer>
+
+	</body>
 </html>
