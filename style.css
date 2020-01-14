@@ -7,6 +7,7 @@
     text-decoration: none;
     outline: none;
     color: #fff;
+    transition: all 0.2s ease;
 }
 html, body{
     width: 100%;
@@ -31,6 +32,9 @@ h3{
 p{
     font-size: 18px;
     line-height: 25px;
+}
+a{
+    text-decoration: underline;
 }
 
 .container{
@@ -81,8 +85,11 @@ p{
     line-height: 128px;
     font-weight: 900;
 }
+.section-intro a{
+    text-decoration: none;
+}
 
-.section-sobre{
+.section-sobre, .section-projetos{
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -93,8 +100,7 @@ p{
 .section-sobre .logo{
     width: 125px;
     height: 125px;
-    background-color: #222;
-    border: 1px solid #777;
+    background-color: #111;
     border-radius: 75px;
     background-image: url("imgs/logo.png");
     background-size: cover;
@@ -105,11 +111,80 @@ p{
 .section-sobre h2:nth-of-type(1){
     color: #3f8;
 }
+.section-sobre h2:nth-of-type(2){
+    color: #e93;
+}
+.section-sobre h2:nth-of-type(3){
+    color: #63f;
+}
 .section-sobre p{
     max-width: 65%;
     text-align: center;
 }
+.section-sobre p span{
+    font-weight: bold;
+}
+.section-sobre p span:nth-child(1){
+    color:#3f8;
+    font-style: italic;
+}
+.section-sobre p span:nth-child(2){
+    color:#e93;
+    font-style: italic;
+}
+.section-sobre p span:nth-child(3){
+    color:#63f;
+    font-style: italic;
+}
 
+.section-projetos .cards{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.card-proj{
+    position: relative;
+    margin:10px;
+    width: 250px;
+    height: 250px;
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+}
+.card-proj a{
+    text-decoration: none;
+    text-align: center;
+    background-color: #222;
+    padding: 10px 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+}
+.card-proj a:hover{
+    background-color: #333;
+}
+.card-proj:hover h2,.card-proj:hover p{
+    color: #333;
+}
+.section-projetos .cards .card-proj:hover:nth-child(3n+1){
+    background-color: #e93;
+}
+.section-projetos .cards .card-proj:hover:nth-child(3n+2){
+    background-color: #3f8;
+}
+.section-projetos .cards .card-proj:hover:nth-child(3n+0){
+    background-color: #63f;
+}
+
+footer{
+    height: 100px;
+    background-color: #fff;
+    color: #222;
+}
 @supports (-webkit-text-stroke: 1px black) {
     .section-intro h1:before {
         content:"Eu posso fazer";
