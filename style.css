@@ -198,6 +198,9 @@ a{
 .card:hover:nth-child(3n+0){
     background-color: #63f;
 }
+.card p{
+    text-align: left;
+}
 
 .versiculo{
     width: 50%;
