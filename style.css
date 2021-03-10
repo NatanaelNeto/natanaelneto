@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anaheim', sans-serif;
+    z-index: 0;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+html, body{
+    width: 100%;
+}
+body{
+    background-color: #03090a;
+    color: #fff;
+    opacity: 0;
+}
+h1{
+    font-size: 48px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 900;
+}
+h2{
+    font-size: 32px;
+}
+h3{
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+}
+p{
+    font-size: 18px;
+    line-height: 25px;
+}
+a{
+    text-decoration: underline;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#moveFundo{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-image: url("imgs/fundo-move.png");
+    background-attachment: scroll;
+    background-position: bottom right;
+    background-size: cover;
+}
+
+.section-intro{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    overflow: hidden;
+    background-image: url("imgs/fundo-a.png");
+    background-size: cover;
+    background-position: bottom right;
+
+}
+.section-intro h3{
+    margin-bottom: 40px;
+}
+.section-intro h1{
+    font-size: 128px;
+    max-width: 600px;
+    line-height: 128px;
+    font-style: italic;
+}
+.section-intro h1 span{
+    color:#3f8;
+    font-family: 'Heebo', sans-serif;
+    font-size: 128px;
+    line-height: 128px;
+    font-weight: 900;
+}
+.section-intro a{
+    text-decoration: none;
+}
+
+.section-sobre, .section-skills, .section-projetos{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 60px;
+}
+.section-sobre .logo{
+    width: 125px;
+    height: 125px;
+    background-color: #111;
+    border-radius: 75px;
+    background-image: url("imgs/logo.png");
+    background-size: cover;
+}
+.section-sobre h2{
+    margin-top: 40px;
+}
+.section-sobre h2:nth-of-type(3n+1), .card ul li:nth-child(3n+1) span{
+    color: #3f8;
+}
+.section-sobre h2:nth-of-type(3n+2), .card ul li:nth-child(3n+2) span{
+    color: #e93;
+}
+.section-sobre h2:nth-of-type(3n+0), .card ul li:nth-child(3n+0) span{
+    color: #63f;
+}
+.section-sobre p{
+    width: 65%;
+    min-width: 300px;
+    text-align: center;
+}
+.section-sobre p span:nth-child(3n+1){
+    color:#3f8;
+    font-style: italic;
+}
+.section-sobre p span:nth-child(3n+2){
+    color:#e93;
+    font-style: italic;
+}
+.section-sobre p span:nth-child(3n+0){
+    color:#63f;
+    font-style: italic;
+}
+.section-sobre p span{
+    font-weight: bold;
+}
+
+.section-projetos p{
+    text-align: center;
+}
+
+.card ul{
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.cards{
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    margin:10px;
+    width: 250px;
+    height: 250px;
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+}
+.card a{
+    text-decoration: none;
+    text-align: center;
+    background-color: #222;
+    padding: 10px 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+}
+.card h3{
+    font-weight: bold;
+}
+.card a:hover{
+    background-color: #333;
+}
+.card:hover h3,.card:hover p, .card:hover ul li{
+    color: #333;
+}
+.card:hover ul li span{
+    color: #333;
+    font-weight: 900;
+}
+.card:hover:nth-child(3n+1){
+    background-color: #3f8;
+}
+.card:hover:nth-child(3n+2){
+    background-color: #e93;
+}
+.card:hover:nth-child(3n+0){
+    background-color: #63f;
+}
+.card p{
+    text-align: left;
+}
+
+.versiculo{
+    width: 50%;
+    min-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    font-style: italic;
+}
+.referencia{
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: bold;
+    color: #3f8;
+}
+
+footer{
+    height: 100px;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+footer p{
+    text-align: center;
+    color: #222;
+}
+@supports (-webkit-text-stroke: 1px black) {
+    .section-intro h1:before {
+        content:"Eu posso fazer";
+        position: absolute;
+        max-width: 600px;
+        z-index: -1;
+        -webkit-text-stroke: 2px transparent;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.2s ease;
+    }
+    .section-intro h1:hover:before {
+        content:"Eu posso fazer";
+        position: absolute;
+        max-width: 600px;
+        transform: translate(10px,7px);
+        z-index: -1;
+        -webkit-text-stroke: 2px #3f8;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 979px){
+    .section-intro h1, .section-intro h1 span{
+        font-size: 100px;
+        line-height: 100px;
+    }
+    #moveFundo{
+        background-position: right;
+        opacity: 0.5;
+    }
+}
+@media only screen and (min-width: 1600px){
+    .section-intro h1, .section-intro h1 span{
+        font-size: 200px;
+        line-height: 200px;
+        max-width: 900px;
+    }
+    .section-intro h1:before{
+        max-width: 900px;
+    }
+    .section-intro h1:hover:before{
+        max-width: 900px;
+        transform: translate(20px,14px);
+    }
+    h2{
+        font-size: 48px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    p{
+        font-size: 25px;
+        line-height: 36px;
+    }
+    .card{
+        width: 300px;
+        height: 300px;
+    }
+}
